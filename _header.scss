@@ -1,0 +1,174 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    @include media($until: tablet) {
+        padding: 30px;
+        width: 375px;
+        justify-content: space-between;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            .menu-burger {
+                display: flex;
+               justify-content: space-around; 
+                margin-left: 180px;
+            }
+        }
+    }
+    img {
+        padding: 40px 70px 0 40px;
+        @include media($until: tablet) {
+            padding: 0
+        }
+    }
+    .features {
+        position: relative;
+        display: inline-block;
+        @include media($until: tablet) {
+            display: none;
+        }
+        span {
+            padding-left: 35px;
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--Medium-Gray);
+        }
+        .features-content {
+            display: none;
+            position: absolute;
+            margin-top: 5px;
+            background-color: var(--Almost-White);
+            width: 135px;
+            box-shadow: 0px 8px 16px 0px hsla(0, 0%, 41%, 0.543);
+            padding: 16px;
+            z-index: 1;
+            border-radius: 15px;
+            a {
+                font-weight: 500;
+            }
+            .todo-list {
+                display: grid;
+                grid-template-columns: 25px 150px;
+                justify-content: center;
+                padding: 10px;
+                img {
+                    padding: 0;
+                    margin: 0 0 0 20px;
+                }
+            }
+            .calendar {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 25px 150px;
+                padding: 10px;
+                img {
+                    padding: 0;
+                    margin: 0 20px 0 20px;
+                }
+            }
+            .reminders {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 25px 150px;
+                padding: 10px;
+                img {
+                    padding: 0;
+                    margin: 0 20px 0 20px;
+                }
+            }
+            .planning {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 25px 150px;
+                padding: 10px;
+                img {
+                    padding: 0;
+                    margin: 0 20px 0 20px;
+                }
+            }
+        }
+    }
+    
+    .features:hover .features-content {
+        cursor: pointer;
+        display: block;
+    }
+    .company {
+        position: relative;
+        display: inline-block;
+        @include media($until: tablet) {
+            display: none;
+        }
+        span {
+            padding-left: 35px;
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--Medium-Gray);
+        }
+        .company-content {
+            margin-top: 5px;
+            display: none;
+            position: absolute;
+            background-color: var(--Almost-White);
+            width: 100px;
+            box-shadow: 0px 8px 16px 0px hsla(0, 0%, 41%, 0.543);
+            padding: 25px 12px;
+            z-index: 1;
+            border-radius: 15px;
+            a {
+                padding-left: 15px;
+                text-align: left;
+                font-weight: 500;
+            }
+            .history, .team {
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .company:hover .company-content {
+        cursor: pointer;
+        display: block;
+    }
+    a {
+        padding-left: 35px;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--Medium-Gray);
+        @include media($until: tablet) {
+            display: none;
+        }
+    }
+    a:hover {
+        color: var(--Almost-Black);
+    }
+    .arrow {
+        padding: 0 0 0 5px;
+    }
+    .login {
+        display: flex;
+        padding-top: 40px;
+        margin-left: 400px;
+        justify-content: end;
+        align-items: center;
+        @include media($until: tablet) {
+            display: none;
+        }
+        a {
+            margin-right: 35px;
+        }
+        button {
+            background-color: var(--Almost-White);
+            border-radius: 20px;
+            padding: 15px 20px;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--Medium-Gray);
+            border: 3px solid var(--Medium-Gray);
+        }
+        button:hover {
+            color: var(--Almost-Black);
+            border: 3px solid var(--Almost-Black);
+        }
+    }
+}

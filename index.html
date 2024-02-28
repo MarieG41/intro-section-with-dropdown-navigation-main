@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.svg" alt="image logo snap">
+      <div class="menu-burger hidden-mobile">
+        <img src="images/icon-menu.svg" alt="icone de menu burger">
+      </div>
+      <div class="features">
+        <span>Features</span><img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
+        <div class="features-content">
+          <div class="todo-list">
+            <img src="images/icon-todo.svg" alt="icone de todo list"><a href="#">Todo list</a>
+          </div>
+          <div class="calendar">
+            <img src="images/icon-calendar.svg" alt="icone de todo list"><a href="#">Calendar</a>
+          </div>
+          <div class="reminders">
+            <img src="images/icon-reminders.svg" alt="icone de todo list"><a href="#">Reminders</a>
+          </div>
+          <div class="planning">
+            <img src="images/icon-planning.svg" alt="icone de todo list"><a href="#">Planning</a>
+          </div>
+        </div>
+      </div>
+      <div class="company">
+        <span>Company</span><img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
+        <div class="company-content">
+          <div class="history">
+            <a href="#">History</a>
+          </div>
+          <div class="team">
+            <a href="#">Our Team</a>
+          </div>
+          <div class="blog">
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+    </nav>
+    <div class="login">
+      <a href="#">Login</a>
+      <button>Register</button>
+    </div>
+  </header>
+  
+  <section>
+    <img class="hidden-mobile" src="images/image-hero-mobile.png" alt="image hero version mobile">
+    <div class="content-left">
+      <h1>Make remote work</h1>
+
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+
+      <button>Learn more</button>
+        <div class="img-companies">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="content-right">
+      <picture>
+        <img class="hidden" src="images/image-hero-desktop.png" alt="image hero version desktop">
+    </picture>
+    </div>  
+  </section>
+  
+</body>
+</html>
