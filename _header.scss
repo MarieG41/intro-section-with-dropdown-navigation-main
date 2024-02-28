@@ -1,17 +1,140 @@
+.burger-menu-anim {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 770px;
+    background-color: var(--Almost-White); 
+    padding-top: 55px;
+    img {
+        margin-left: 150px;
+    }
+    a, span {
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--Medium-Gray);
+    }
+    .features {
+        margin-top: 20px;
+    }
+    .arrow {
+        margin-left: 7px;
+    }
+    .company, .careers {
+        margin: 20px 0;
+    }
+    .features, .company, .careers, .about {
+        padding-left: 20px;
+    }
+    .features {
+        position: relative;
+        display: inline-block;
+        a {
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        a:active {
+            color: var(--Almost-Black);
+        }
+        .features-content {
+            margin: 30px 0;
+        }
+        .todo-list {
+            display: grid;
+            grid-template-columns: 25px 150px;
+            justify-content: center;
+            padding: 10px;
+            img {
+                padding: 0;
+                margin: 0 0 0 20px;
+            }
+        }
+        .calendar {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 25px 150px;
+            padding: 10px;
+            img {
+                padding: 0;
+                margin: 0 20px 0 20px;
+            }
+        }
+        .reminders {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 25px 150px;
+            padding: 10px;
+            img {
+                padding: 0;
+                margin: 0 20px 0 20px;
+            }
+        }
+        .planning {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 25px 150px;
+            padding: 10px;
+            img {
+                padding: 0;
+                margin: 0 20px 0 20px;
+            }
+        }
+    }
+    .company-content {
+        margin-top: 5px;
+        background-color: var(--Almost-White);
+        padding: 25px 12px;
+        z-index: 1;
+        border-radius: 15px;
+        a {
+            padding-left: 15px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .history, .team {
+            padding-bottom: 15px;
+        }
+    }
+    .login-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px 0;
+        a {
+            padding-bottom: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--Medium-Gray);
+        }
+        button {
+            background-color: var(--Almost-White);
+            border-radius: 20px;
+            padding: 12px 35px;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--Medium-Gray);
+            border: 3px solid var(--Medium-Gray);
+        }
+        button:hover {
+            color: var(--Almost-Black);
+            border: 3px solid var(--Almost-Black);
+        }
+    }
+}
 header {
     display: flex;
     justify-content: space-evenly;
     @include media($until: tablet) {
-        padding: 30px;
-        width: 375px;
+        padding: 30px 0 30px 20px;
+        width: 350px;
         justify-content: space-between;
         nav {
             display: flex;
             justify-content: space-around;
             .menu-burger {
                 display: flex;
-               justify-content: space-around; 
-                margin-left: 180px;
+                justify-content: space-around; 
+                margin-left: 200px;
             }
         }
     }

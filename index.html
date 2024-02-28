@@ -13,14 +13,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 </head>
 <body>
+  <div class="burger-menu-anim hidden-mobile">
+    <img class="close" src="images/icon-close-menu.svg" alt="">
+    <div class="features">
+      <span>Features</span><img class="arrow arrow-one" src="images/icon-arrow-down.svg" alt="arrow">
+        <div class="features-content hidden-burger">
+          <div class="todo-list">
+            <img src="images/icon-todo.svg" alt="icone de todo list"><a href="#">Todo list</a>
+          </div>
+          <div class="calendar">
+            <img src="images/icon-calendar.svg" alt="icone de todo list"><a href="#">Calendar</a>
+          </div>
+          <div class="reminders">
+            <img src="images/icon-reminders.svg" alt="icone de todo list"><a href="#">Reminders</a>
+          </div>
+          <div class="planning">
+            <img src="images/icon-planning.svg" alt="icone de todo list"><a href="#">Planning</a>
+          </div>
+        </div>
+    </div>
+    <div class="company">
+      <span>Company</span><img class="arrow arrow-two" src="images/icon-arrow-down.svg" alt="arrow">
+      <div class="company-content hidden-burger">
+        <div class="history">
+          <a href="#">History</a>
+        </div>
+        <div class="team">
+          <a href="#">Our Team</a>
+        </div>
+        <div class="blog">
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    </div>
+    <div class="careers"><a href="#">Careers</a></div>
+    <div class="about"><a href="#">About</a></div>
+    <div class="login-mobile">
+      <a href="#">Login</a>
+      <button>Register</button>
+    </div>
+  </div>
   <header>
     <nav>
       <img src="images/logo.svg" alt="image logo snap">
       <div class="menu-burger hidden-mobile">
-        <img src="images/icon-menu.svg" alt="icone de menu burger">
+        <img class="burger" src="images/icon-menu.svg" alt="icone de menu burger">
       </div>
       <div class="features">
         <span>Features</span><img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
@@ -63,7 +103,7 @@
   </header>
   
   <section>
-    <img class="hidden-mobile" src="images/image-hero-mobile.png" alt="image hero version mobile">
+    <img class="hero-mobile hidden-mobile" src="images/image-hero-mobile.png" alt="image hero version mobile">
     <div class="content-left">
       <h1>Make remote work</h1>
 

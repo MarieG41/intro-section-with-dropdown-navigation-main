@@ -3,7 +3,6 @@ section {
     grid-template-columns: 725px 645px;
     margin: 80px;
     @include media($until: tablet) {
-        width: 375px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -74,6 +73,7 @@ section {
                 margin-right: 10px;
                 height: 20%;
                 width: 20%;
+                margin-bottom: 50px;
             }
         }
     }

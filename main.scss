@@ -9,19 +9,25 @@
 body {
     font-family: 'Epilogue', sans-serif;
     font-size: 16px;
-    background-color: var(--Almost-White)
+    background-color: var(--Almost-White);
 }
+.hidden-burger {
+    display: none;
+}
+
 .hidden {
     display: block;
     @include media($until: tablet) {
         display: none;
     }
 }
+
 .hidden-mobile {
     display: none;
     @include media($until: tablet) {
         display: block
     }
 }
+
 @import 'header';
 @import 'hero';
